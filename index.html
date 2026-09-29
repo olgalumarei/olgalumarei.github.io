@@ -247,8 +247,6 @@
   .contact-form-status.is-success{border-color:#6f8f70;background:#f1f5ef;}
   .contact-form-status.is-error{border-color:#a85e57;background:#fbf1ef;}
   .contact-form .btn:disabled{opacity:.55;cursor:wait;}
-  .bot-field{position:absolute!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;height:1px!important;width:1px!important;margin:-1px!important;padding:0!important;border:0!important;}
-
   /* ---------- Footer ---------- */
   footer{background:var(--ink);color:rgba(245,243,238,.65);padding:28px 0 40px;font-size:13px;}
   .footer-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;}
@@ -470,7 +468,6 @@
     <p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite" hidden></p>
     <form class="contact-form" id="contactForm" name="project-inquiry" method="POST" action="https://formspree.io/f/xaenadgv">
       <input type="hidden" name="_subject" value="New inquiry from OLGA LUMAREI portfolio">
-      <p class="bot-field" aria-hidden="true"><label>Do not fill this field: <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
       <label><span data-t="contact.formName"></span><input type="text" name="name" autocomplete="name" required></label>
       <label><span data-t="contact.formEmail"></span><input type="email" name="email" autocomplete="email" required></label>
       <label><span data-t="contact.formMessage"></span><textarea name="message" required></textarea></label>
